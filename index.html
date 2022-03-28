@@ -1,0 +1,335 @@
+
+<!-- saved from url=TODO -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Audio samples from ""</title>
+  </head>
+  <body>
+    <article>
+      <header>
+          <h1>Audio samples from "Improving Fine-grained Emotion Control and Transfer with Gated Emotion Representations in Speech Synthesis"</h1>
+      </header>
+    </article>
+
+    <div><b>Abstract:</b>
+Fine-grained emotion strength control and prediction is recently studied in text-to-speech to adjust local emotion intensity in an utterance. Due to the lack of phone or syllable-level emotion strength labels, emotion or style strength extractor is usually learned at the whole utterance scale through a ranking function. But the fine-grained emotional speech synthesis acoustic model is independently trained conditioning on the previously extracted emotion strength labels. To bridge the granularity gap between the emotion strength extractor learning and the emotional speech synthesis acoustic model training, a simple yet effective component called Emotion Gate is introduced
+to directly learn fine-grained emotion strengths in an end-to-end paradigm. Furthermore, besides predicting from a jointly trained emotion strength predictor, proposed method also allows to manually assign and control the fine-grained emotion strengths during inference. In experiment part, proposed method is evaluated in both non-transferred emotional speech synthesis and cross-speaker transferred scenarios. Both objective and subjective evaluations show the effectiveness and superiority of proposed method over the state-of-the-art baseline systems.		<div>
+
+        <br>
+        <a name="content"><h3> Content </h3></a>
+        <a href="#data">&nbsp;&nbsp;&nbsp;&nbsp;1. Audio samples in datasets</a><br>
+        <a href="#task1">&nbsp;&nbsp;&nbsp;&nbsp;2. Audio samples of speakerA in Task-I (parallel transfer and predicted emotion strengths)</a><br>
+        <a href="#task2">&nbsp;&nbsp;&nbsp;&nbsp;3. Audio samples of speakerB in Task-II (the proposed method in cross-speaker emotion transfer scenario)</a><br>
+        <a href="#control">&nbsp;&nbsp;&nbsp;&nbsp;4. Emotion strengths control samples in Task-I and Task-II (manually assigned emotion strengths)</a><br>
+        <a href="#control1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1. Emotion strengths control in Task-I (speaker A)</a><br>
+        <a href="#control2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2. Emotion strengths control in Task-II (speaker B: emotion transferred from speaker A)</a>
+        <br>
+        <br>
+        <HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)" width="100%" color=#808080 SIZE=4>
+
+        <div id="data"></div>
+      <a name="origin_wav"><h2>Audio samples in datasets</h2></a>
+       <table>
+        <tbody>
+        <tr>
+          <td></td>
+          <td align="left" style="width: 360px;"><div style="width: 350px;">我很闲 <br> (in English: I got time)</div></td>
+          <td align="left" style="width: 360px;"><div style="width: 350px;">这东西，是虽然没啥大用，但用来恢复元气，疗愈暗伤，还是有着不错效果的，百里秘境，我希望你能够活着活来。 <br> (in English: This thing, although it is of little use, but it can be used to restore vitality and heal hidden wounds which still has a good effect, Bai Li Mi Jing, I hope you can come back alive.)</div></td>
+        </tr>
+        <tr>
+          <td>speaker A (emotional dataset)</td>
+          <td style="width: 360px;"><audio controls=""><source src="samples/data_recordings/speakerA/neutral1.wav"></audio></td>
+          <td style="width: 360px;"><audio controls=""><source src="samples/data_recordings/speakerA/neutral2.wav"></audio></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="left" style="width: 360px;"><div style="width: 350px;">倾城，你别不理我呀。<br> (in English: Qing Chen, do not ignore me.)</div></td>
+          <td align="left" style="width: 360px;"><div style="width: 350px;">周少景,前面就是我学校里,你就不怕被季玲看到? <br> (in English: Zhou Shaojing, my school is around the corner, you are not afraid of being witnessed by Ji Ling?)</div></td>
+        </tr>
+        <tr>
+          <td nowrap="">speaker B</td>
+          <td style="width: 360px;"><audio controls=""><source src="samples/data_recordings/speakerB/neutral1.wav"></audio></td>
+          <td style="width: 360px;"><audio controls=""><source src="samples/data_recordings/speakerB/neutral2.wav"></audio></td>
+        </tr>
+      </tbody></table>
+
+       <!-- task 1 table -->
+      <div id="task1"></div>
+      <a name="origin_wav"><h2>Audio samples of speakerA in Task-I (parallel transfer and predicted emotion strengths)</h2></a>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow">Emotion Type<br>+ Text<br></th>
+    <!-- <th class="tg-c3ow">Recording</th> -->
+    <th class="tg-c3ow">Copy-Synth</th>
+    <th class="tg-c3ow">Base</th>
+    <th class="tg-baqh">FRA-Scale<br> (parallel transfer)</th>
+    <th class="tg-baqh">FRA-Transform<br>(parallel transfer)</th>
+    <th class="tg-baqh">proposed FEG-Scale (pred)</th>
+    <th class="tg-baqh">proposed FEG-Scale<br>(parallel transfer)<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+      <td class="tg-0pky"> <span style="font-weight:bold">Emotion Type: <br>alert</span> <br><br>Text: 老大，有什么事吗？<br>(in English: Boss, what's the matter?)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/ref_speaker_A_copysynth/alert.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/base_speakerA/alert.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_scale_speakerA/alert.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_transform_speakerA/alert.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_pred_speakerA/alert.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_speakerA/alert.wav"></audio> </td>
+  </tr>
+  <tr>
+      <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: <br>disgust</span><br><br>Text: 我说你这人烦不烦，老是插什么嘴。<br>(in English, I say you're so annoying, <br>you always interrupt my words.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/ref_speaker_A_copysynth/disgust.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/base_speakerA/disgust.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_scale_speakerA/disgust.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_transform_speakerA/disgust.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_pred_speakerA/disgust.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_speakerA/disgust.wav"></audio> </td>
+  </tr>
+  <tr>
+      <td class="tg-0pky"><span style="font-weight:bold">Emoion Type: <br>joy</span><br><br>Text: 你完全继承了你爸的帅气，还青出于蓝。<br>(in English: You have completely inherited <br>your father's handsomeness, <br>and you are even better.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/ref_speaker_A_copysynth/joy.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/base_speakerA/joy.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_scale_speakerA/joy.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_transform_speakerA/joy.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_pred_speakerA/joy.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_speakerA/joy.wav"></audio> </td>
+  </tr>
+  <tr>
+      <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: <br>sad</span><br><br>Text: 我听说你们这里被虫子袭击了，<br>差点以为你有事了。<br>(in English: I heard that you were attacked<br> by bugs here, and I almost thought you were in trouble.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/ref_speaker_A_copysynth/sad.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/base_speakerA/sad.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_scale_speakerA/sad.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_transform_speakerA/sad.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_pred_speakerA/sad.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_speakerA/sad.wav"></audio> </td>
+  </tr>
+  <tr>
+      <td class="tg-0lax"><span style="font-weight:bold">Emotion Type: <br>neutral</span><br><br>Text: 行吧，同桌带你赢。<br>(in English: Okay, deskmate take you to win)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/ref_speaker_A_copysynth/neutral.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task1/base_speakerA/neutral.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_scale_speakerA/neutral.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/fra_transform_speakerA/neutral.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_pred_speakerA/neutral.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task1/feg_scale_speakerA/neutral.wav"></audio> </td>
+  </tr>
+</tbody>
+</table>
+
+
+
+<div id="task2"></div>
+<a name="origin_wav"><h2>Audio samples of speakerB in Task-II (the proposed method in cross-speaker emotion transfer scenario)</h2></a>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow">Emotion Type<br>+ Text</th>
+    <th class="tg-c3ow">Copy-Synth with same text <br>of speaker A</th>
+    <th class="tg-baqh">Copy-Synth with same text <br>of speaker B</th>
+    <th class="tg-c3ow">Base</th>
+    <th class="tg-0lax">proposed FEG-Scale (pred)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type:</span><br><span style="font-weight:bold">alert</span><br><br>Text: 你自己不也是股神吗？<br>(in English: Aren't you a trading master)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task2/ref_speakerAB_copysynth/alert.wav"></audio> </td>
+    <td class="tg-baqh">/</td>
+    <td class="tg-c3ow">  <audio style="width: 200px;" controls=""><source src="samples/task2/base_speakerB/alert.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task2/feg_scale_speakerB/alert.wav"></audio>  </td>
+  </tr>
+  <tr>
+      <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">disgust</span><br><br>Text: 你走吧，我们小队容不下你。<br>(in English: Please just go, our squad can't tolerate you.)</td>
+      <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task2/ref_speakerAB_copysynth/disgust.wav"></audio> </td>
+      <td class="tg-baqh">/</td>
+      <td class="tg-c3ow">  <audio style="width: 200px;" controls=""><source src="samples/task2/base_speakerB/disgust.wav"></audio> </td>
+      <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task2/feg_scale_speakerB/disgust.wav"></audio>  </td>
+  </tr>
+  <tr>
+      <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">joy</span><br><br>Text: 这才是战神大人，从来都没改变过。<br>(in English: This is the God of War, which has never been changed.</td>
+      <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task2/ref_speakerAB_copysynth/joy.wav"></audio> </td>
+      <td class="tg-baqh">/</td>
+      <td class="tg-c3ow">  <audio style="width: 200px;" controls=""><source src="samples/task2/base_speakerB/joy.wav"></audio> </td>
+      <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task2/feg_scale_speakerB/joy.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">sad</span><br><br>Text: 我费尽了所有全力，也无法阻止这样的悲剧。<br>(in English: I tried my best and could not prevent such a tragedy.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/task2/ref_speakerAB_copysynth/sad.wav"></audio> </td>
+    <td class="tg-baqh">/</td>
+    <td class="tg-c3ow">  <audio style="width: 200px;" controls=""><source src="samples/task2/base_speakerB/sad.wav"></audio> </td>
+    <td class="tg-0lax"> <audio style="width: 200px;" controls=""><source src="samples/task2/feg_scale_speakerB/sad.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">neutral </span>(neutral does not need to be transferred from speakerA)<br><br>Text: 你又何必，跟自己较劲儿呢？<br>(in English: Why would you be stuck into the trap you created for yourself?)</td>
+    <td class="tg-baqh">/</td>
+    <td class="tg-0lax"><audio style="width: 200px;" controls=""><source src="samples/task2/ref_speakerAB_copysynth/neutralB.wav"></audio></td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/task2/base_speakerB/neutral.wav"></audio></td>
+    <td class="tg-0lax"><audio style="width: 200px;" controls=""><source src="samples/task2/feg_scale_speakerB/neutral.wav"></audio></td>
+  </tr>
+</tbody>
+</table>
+
+
+<div id="control"></div>
+<a name="origin_wav"><h2>Emotion strengths control samples in Task-I and Task-II (manually assigned emotion strengths)</h2></a>
+
+
+<div id="control1"></div>
+<a name="origin_wav"><h3> Emotion strengths control in Task-I (speaker A) </h3></a>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-baqh" colspan="2">Increase emotion strengths from 0 to 1</th>
+    <th class="tg-baqh" colspan="2">Descrease emotion strengths from 1 to 0</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Emotion Type<br>+ Text</td>
+    <td class="tg-c3ow">FRA-Transform (assign)<br>(speakerA)</td>
+    <td class="tg-baqh">proposed FEG-Scale (assign)<br>(speakerA)</td>
+    <td class="tg-c3ow">FRA-Transform (assign)<br>(speakerA)</td>
+    <td class="tg-baqh">proposed FEG-Scale (assign)<br>(speakerA)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type:</span><br><span style="font-weight:bold">alert</span><br><br>Text: 看看能不能从旁边绕过去，我们车上的货，是不能被发现的。<br>(in English: Let's see if you can go around to skip this path, <br>the goods in our car must not be found by others.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1_rank/alert.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/alert.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1_rank/alert.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/alert.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">disgust</span><br><br>Text: 我都觉得邵雪有问题,可是天泽还偏偏不相信,<br>现在拿到这些照片,看天泽还怎么袒护这个小贱人。<br><br>(in English: I think there is something wrong with Shao Xue, <br>but Tianze still doesn't believe it.<br>Now I get these photos and see how Tianze still protects her.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1_rank/disgust.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/disgust.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1_rank/disgust.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/disgust.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">joy</span><br><br>Text: 真是太聪明了,他们竟然用这样的方法,轻松化解了危机,<br>亦恒不愧是三哥的儿子,不只实力强,头脑也如此灵活。<br>(in English: It was so clever that they actually used such a method to easily <br>resolve the crisis, and Yi Heng was worthy of being the son of my third brother,<br>he is not only strong in strength, but also has a powerful mind.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1_rank/joy.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/joy.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1_rank/joy.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/joy.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">sad</span><br><br>Text: 由资本家控制的国家,有一个最大的弱点,<br>那就是资本家可以为了自己的利益出卖任何东西,包括自己的国家.<br>(in English: A country purely controlled by capitalists has one of the greatest weaknesses, <br>which is that they might trade anything for their own benefit, including their own country.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1_rank/sad.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/sad.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1_rank/sad.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/sad.wav"></audio>  </td>
+  </tr>
+</tbody>
+</table>
+
+
+<div id="control2"></div>
+<a name="origin_wav"><h3> Emotion strengths control in Task-II (speaker B: emotion transferred from speaker A) </h3></a>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-baqh" colspan="2">Increase emotion strengths from 0 to 1</th>
+    <th class="tg-baqh" colspan="2">Descrease emotion strengths from 1 to 0</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Emotion Type<br>+ Text</td>
+    <td class="tg-c3ow">proposed FEG-Scale (assign)<br>(speakerA)</td>
+    <td class="tg-baqh">proposed FEG-Scale (assign)<br>(speakerB)</td>
+    <td class="tg-c3ow">proposed FEG-Scale (assign)<br>(speakerA)</td>
+    <td class="tg-baqh">proposed FEG-Scale (assign)<br>(speakerB)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type:</span><br><span style="font-weight:bold">alert</span><br><br>Text: 看看能不能从旁边绕过去，我们车上的货，是不能被发现的。<br>(in English: Let's see if you can go around to skip this path, <br>the goods in our car must not be found by others.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/alert.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task2/alert.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/alert.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task2/alert.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">disgust</span><br><br>Text: 我都觉得邵雪有问题,可是天泽还偏偏不相信,<br>现在拿到这些照片,看天泽还怎么袒护这个小贱人。<br><br>(in English: I think there is something wrong with Shao Xue, <br>but Tianze still doesn't believe it.<br>Now I get these photos and see how Tianze still protects her.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/disgust.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task2/disgust.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/disgust.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task2/disgust.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">joy</span><br><br>Text: 真是太聪明了,他们竟然用这样的方法,轻松化解了危机,<br>亦恒不愧是三哥的儿子,不只实力强,头脑也如此灵活。<br>(in English: It was so clever that they actually used such a method to easily <br>resolve the crisis, and Yi Heng was worthy of being the son of my third brother,<br>he is not only strong in strength, but also has a powerful mind.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/joy.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task2/joy.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/joy.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task2/joy.wav"></audio>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:bold">Emotion Type: </span><br><span style="font-weight:bold">sad</span><br><br>Text: 由资本家控制的国家,有一个最大的弱点,<br>那就是资本家可以为了自己的利益出卖任何东西,包括自己的国家.<br>(in English: A country purely controlled by capitalists has one of the greatest weaknesses, <br>which is that they might trade anything for their own benefit, including their own country.)</td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task1/sad.wav"></audio> </td>
+    <td class="tg-baqh"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/low_to_high_samples_task2/sad.wav"></audio> </td>
+    <td class="tg-c3ow"> <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task1/sad.wav"></audio> </td>
+    <td class="tg-0lax">  <audio style="width: 200px;" controls=""><source src="samples/emotion_control/high_to_low_samples_task2/sad.wav"></audio>  </td>
+  </tr>
+</tbody>
+</table>
+
+
+      <p>&nbsp;</p>
+    </div>
+
+</body></html>
